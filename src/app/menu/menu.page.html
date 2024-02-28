@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+
+<ion-content>
+    this is the content
+      <ion-button a routerLink="'profile">My Project</ion-button>
+      <ion-button a routerLink="../menu/about./profile">My Project</ion-button>
+      <ion-button a [routerLink]="['/','menu','about','profile',id]">My Project</ion-button>
+</ion-content>
+
+<ion-button (click)="onClick()">Signup</ion-button>
